@@ -1,0 +1,95 @@
+.MapInformation {
+	display: flex;
+	justify-content: space-evenly;
+	.map {
+		width: 80%;
+		margin-right: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.rsm-svg {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			width: 100%;
+			min-width: 250px;
+		}
+	}
+	.country-data {
+		background-color: #202020;
+		color: #fff;
+		width: 40%;
+		margin: 40px;
+		height: 700px;
+		h2 {
+			font-weight: lighter;
+			height: 5vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 35px;
+		}
+		h3 {
+			font-weight: lighter;
+			margin: 10px 0 0;
+			padding-left: 20px;
+			font-size: 20px;
+		}
+		footer {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			h2 {
+				font-size: 25px;
+			}
+			a {
+				color: #fff;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.controls {
+	display: flex;
+	margin: 1.25rem 0;
+	text-align: center;
+}
+
+.controls > button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	height: 2rem;
+	width: 2rem;
+	background: #ff5533;
+	color: #fff;
+	border-radius: 100%;
+	border: 0;
+}
+.controls > button:first-child {
+	margin-right: 0.25rem;
+}
+
+@media (max-width: 1024px) {
+	.MapInformation {
+		flex-direction: column;
+		.map {
+			width: 90%;
+			margin: auto;
+		}
+		.country-data {
+			margin: 0;
+			width: 100%;
+			h2 {
+				font-size: 25px;
+			}
+			h3 {
+				font-size: 15px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}

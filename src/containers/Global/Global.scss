@@ -1,0 +1,22 @@
+.Global {
+	height: 80vh;
+	background-color: #202020;
+	border-top: 2px solid #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	h2 {
+		margin: 0;
+	}
+}
+
+@media (max-width: 400px) {
+	h2 {
+		font-size: 25px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+}
